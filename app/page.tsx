@@ -51,6 +51,13 @@ const programs = [
     highlights: ["Deep Learning", "Natural Language Processing", "Computer Vision", "AI Ethics"],
   },
   {
+    id: 5,
+    name: "Dual Degree (B.Tech + M.Tech in CSE)",
+    icon: <Code className="w-8 h-8" />,
+    description: "Integrated program offering both B.Tech and M.Tech degrees in Computer Science and Engineering.",
+    highlights: ["Extended Research Project", "Industry Internship", "Specialization Tracks", "Integrated Curriculum"],
+  },
+  {
     id: 3,
     name: "M.Tech in CSE (Data Science and AI)",
     icon: <Database className="w-8 h-8" />,
@@ -64,13 +71,7 @@ const programs = [
     description: "Doctoral program for advanced research in various computer science domains.",
     highlights: ["Research Methodology", "Advanced Topics in CS", "Thesis Writing", "Academic Publishing"],
   },
-  {
-    id: 5,
-    name: "Dual Degree (B.Tech + M.Tech in CSE)",
-    icon: <Code className="w-8 h-8" />,
-    description: "Integrated program offering both B.Tech and M.Tech degrees in Computer Science and Engineering.",
-    highlights: ["Extended Research Project", "Industry Internship", "Specialization Tracks", "Integrated Curriculum"],
-  },
+  
 ]
 
 const laboratories = [
