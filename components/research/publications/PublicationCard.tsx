@@ -21,7 +21,7 @@ export default function PublicationCard({ publication, onClick }: PublicationCar
     // Safely access publication properties with fallbacks
     const {
       title = "Untitled Publication",
-      //authors = "Unknown Authors",
+      authors = "Unknown Authors",
       keywords = []
     } = publication || {};
 
@@ -92,4 +92,3 @@ export default function PublicationCard({ publication, onClick }: PublicationCar
     )
   }
 }
-
