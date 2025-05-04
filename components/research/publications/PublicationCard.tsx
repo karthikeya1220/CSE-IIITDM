@@ -21,7 +21,7 @@ export default function PublicationCard({ publication, onClick }: PublicationCar
     // Safely access publication properties with fallbacks
     const {
       title = "Untitled Publication",
-      authors = "Unknown Authors",
+      //authors = "Unknown Authors",
       keywords = []
     } = publication || {};
 
@@ -49,8 +49,8 @@ export default function PublicationCard({ publication, onClick }: PublicationCar
         <div className="flex items-start gap-4">
           {/* <div className="mt-1 flex-shrink-0">{getPublicationTypeIcon(type)}</div> */}
           <div className="flex-grow">
-            <h4 className="text-lg font-medium text-gray-800 mb-2 leading-tight">{title}</h4>
-            <p className="text-gray-600 mb-3">{authors}</p>
+            <p className="text-lg text-s font-small text-gray-800 mb-2 leading-tight">{title}</p>
+            {/* <p className="text-gray-600 mb-3">{authors}</p> */}
 
             <div className="flex flex-wrap gap-y-2 gap-x-4 text-sm">
               {/* <span className="text-gray-500 flex items-center">

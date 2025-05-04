@@ -12,12 +12,12 @@ import PublicationDetail from "@/components/research/publications/PublicationDet
 import Pagination from "@/components/research/publications/Pagination"
 import { AlertCircle, Loader2 } from "lucide-react"
 import FacultyImage from "@/components/faculty/FacultyImage"
+import { StringifyOptions } from "node:querystring"
 
 // Type definitions
 interface Publication {
   id: number
-  title: string
-  authors: string
+  title: StringifyOptions
 }
 
 interface FacultyMember {
@@ -170,17 +170,17 @@ export default function PublicationsPage() {
                         
                         publications.push({
                           id: idx,
-                          title: parts.title || pub.trim(),
-                          authors: parts.authors || 'Unknown',
+                          title: parts.title || pub.trim()
+                          // authors: parts.authors || 'Unknown',
                           // venue: parts.journal || 'Unknown Journal/Conference',
                           // year: parts.year ? parseInt(parts.year) : 2023,
                           // type: (parts.journal || '').toLowerCase().includes('journal') ? 'journal' : 'conference',
                           // doi: parts.doi || '',
                           // citations: Math.floor(Math.random() * 10), // Still random as citation data isn't available
                           // abstract: 'Abstract not available',
-                          keywords: facultyInfo.schoolName1 
-                            ? facultyInfo.schoolName1.split(/[\r\n,]+/).map((i: string) => i.trim()).filter(Boolean)
-                            : ['Computer Science']
+                          // keywords: facultyInfo.schoolName1 
+                          //   ? facultyInfo.schoolName1.split(/[\r\n,]+/).map((i: string) => i.trim()).filter(Boolean)
+                          //   : ['Computer Science']
                         });
                       });
                     }
@@ -192,17 +192,17 @@ export default function PublicationsPage() {
                         
                         publications.push({
                           id: publications.length + idx,
-                          title: parts.title || pub.trim(),
-                          authors: parts.authors || 'Unknown',
+                          title: parts.title || pub.trim()
+                          // authors: parts.authors || 'Unknown',
                           // venue: parts.journal || 'Unknown Journal/Conference',
                           // year: parts.year ? parseInt(parts.year) : 2023,
                           // type: (parts.journal || '').toLowerCase().includes('journal') ? 'journal' : 'conference',
                           // doi: parts.doi || '',
                           // citations: Math.floor(Math.random() * 10), // Still random as citation data isn't available
                           // abstract: 'Abstract not available',
-                          keywords: facultyInfo.schoolName1 
-                            ? facultyInfo.schoolName1.split(/[\r\n,]+/).map((i: string) => i.trim()).filter(Boolean) 
-                            : ['Computer Science']
+                          // keywords: facultyInfo.schoolName1 
+                          //   ? facultyInfo.schoolName1.split(/[\r\n,]+/).map((i: string) => i.trim()).filter(Boolean) 
+                          //   : ['Computer Science']
                         });
                       });
                     }
@@ -320,8 +320,7 @@ export default function PublicationsPage() {
     faculty?.publications.filter((pub) => {
       const matchesSearch =
         searchQuery === "" ||
-        pub.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        pub.authors.toLowerCase().includes(searchQuery.toLowerCase()) 
+        pub.title.toLowerCase().includes(searchQuery.toLowerCase())
       return matchesSearch
     }) || []
 

@@ -47,9 +47,9 @@ export default function PublicationsList({ publications, onSelectPublication }: 
       <div className="flex justify-between items-center mb-6">
         <h3 className="text-xl font-semibold text-gray-800">
           Publications
-          {publications.length > 0 && (
+          {/* {publications.length > 0 && (
             <span className="ml-2 text-sm font-normal text-gray-500">({publications.length})</span>
-          )}
+          )} */}
         </h3>
       </div>
 
