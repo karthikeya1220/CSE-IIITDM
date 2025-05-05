@@ -68,7 +68,7 @@ export default function Footer() {
                 { label: "IIITDM Website", href: "https://iiitdm.ac.in/",target: "__blank" },
                 {label:"academics", href:"https://iiitdm.ac.in/academics/study-at-iiitdm", target: "__blank"},
                 { label: "Academic Calender", href: "https://iiitdm.ac.in/students/existing-students/academic-calendar", target: "__blank" },
-                { label: "Admissions", href: "https://iiitdm.ac.in/admissions/", target: "__blank" },
+                { label: "Admissions", href: "https://iiitdm.ac.in/admissions/ug", target: "__blank" },
                 { label: "Placements", href: "https://www.placements.iiitdm.ac.in/", target: "__blank" },
               ].map((link) => (
                 <li key={link.label}>

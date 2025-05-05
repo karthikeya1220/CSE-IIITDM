@@ -239,7 +239,7 @@ export default function HeroSection() {
                     </div>
 
                     {/* Buttons */}
-                    <div className="flex flex-wrap gap-3 pt-2">
+                    {/* <div className="flex flex-wrap gap-3 pt-2">
                       <Button
                         className={`${sections[activeSection].accent.replace("bg-", "bg-")} text-white hover:opacity-90 rounded-md`}
                         onClick={() => handleExploreClick(sections[activeSection].id)}
@@ -248,7 +248,7 @@ export default function HeroSection() {
                         {sections[activeSection].id.charAt(0).toUpperCase() + sections[activeSection].id.slice(1)}
                         <ChevronRight className="ml-1.5 h-4 w-4" />
                       </Button>
-                    </div>
+                    </div> */}
                   </motion.div>
                 </AnimatePresence>
               </div>
