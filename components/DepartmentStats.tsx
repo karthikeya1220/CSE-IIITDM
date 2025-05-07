@@ -2,9 +2,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Users, GraduationCap, FlaskRoundIcon as Flask, Building2 } from "lucide-react"
 
 const stats = [
-  { icon: <Users className="w-8 h-8" />, value: "550+", label: "Students" },
-  { icon: <GraduationCap className="w-8 h-8" />, value: "21", label: "Faculty Members" },
-  { icon: <Flask className="w-8 h-8" />, value: "10+", label: "Research Labs" },
+  { icon: <Users className="w-8 h-8" />, value: "600+", label: "Students" },
+  { icon: <GraduationCap className="w-8 h-8" />, value: "20+", label: "Faculty Members" },
+  { icon: <Flask className="w-8 h-8" />, value: "5+", label: "Research Labs" },
   { icon: <Building2 className="w-8 h-8" />, value: "5", label: "Degree Programs" },
 ]
 
