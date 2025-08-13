@@ -57,7 +57,7 @@ const navItems = [
   { label: "Clubs", 
     href: "/clubs",
     subItems: [
-      { label: "CS Club", href: "https://www.cse.iiitdm.ac.in/csclub.html", target: "__blank" },
+      { label: "CS Club", href: "https://csclub.netlify.app/", target: "__blank" },
       { label: "Developers Club", href: "https://www.devclub.iiitdm.ac.in", target: "__blank" },
     ],
   },
