@@ -14,7 +14,7 @@ export interface StaffMember {
 }
 
 export const staffData: StaffMember[] = [
-  {
+  /*{
     id: 1,
     name: "Mr. Nagarajan R",
     position: "Technical Officer",
@@ -56,6 +56,7 @@ export const staffData: StaffMember[] = [
     bio: "Mr. Aravindan S is a Junior Technical Superintendent specializing in software support and laboratory management.",
     
   },
+  */
   {
     id: 4,
     name: "Mr. Aswin A",
